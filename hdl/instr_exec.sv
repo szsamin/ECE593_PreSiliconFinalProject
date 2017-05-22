@@ -24,6 +24,8 @@ module instr_exec
    input reset_n,                          // Active low reset signal
 
    // From instr_decode module
+   /* You have to tell the memory where to start fetching the first instruction from, 
+   this is done to ignore the first few initialization variables in memory */ 
    input [`ADDR_WIDTH-1:0] base_addr,      // Address for first instruction
    input pdp_mem_opcode_s pdp_mem_opcode,  // Decoded signals for memory instructions
    input pdp_op7_opcode_s pdp_op7_opcode,  // Decoded signals for op7 instructions
@@ -41,7 +43,6 @@ module instr_exec
 
    // From memory_pdp module
    input   [`DATA_WIDTH-1:0] exec_rd_data  // Read data returned by memory
-
    );
 
    // Define enums for the state machine

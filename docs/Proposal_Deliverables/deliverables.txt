@@ -1,0 +1,14 @@
+## Proposal Deliverables ##
+1. Study the design HDL
+2. Write a detailed micro-architectural specification (to make sure you understand the design) 
+	- Block Diagram
+	- All FSMs' diagram
+	- FSM state transitions
+	- How the whole design works
+
+3. Write a detailed functional coverage based test plan
+	- I will spell out more details but it must include:
+		- Unit level testing strategy 
+		- Unit level TB block diagrams (tentative) 
+
+

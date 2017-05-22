@@ -41,6 +41,18 @@ package pdp8_pkg;
 `define JMS 4
 `define JMP 5
 
+/* MRI Instructions 
+
+   0 1 2 3 4 5 6 7 8 9 10 11 
+   --------------------------
+   | OP |I|M| OFFSET        | 
+   --------------------------
+   
+   Bits 0-2: Operation Code 
+   Bit 3   : Indirect Addressing Bit (0: Direct/1:Indirect) 
+   Bit 4   : Memory Page (0:Zero Page/1: Current Page) 
+   Bit 5-11: Offset Address  
+*/ 
 typedef struct packed {
    logic AND;
    logic TAD;

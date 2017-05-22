@@ -22,6 +22,7 @@ module memory_pdp
    // Global input
    input clk,
 
+   /* IFU/EXEC request is necessary to tell the memory module what type of request the CPU is making to the memory */ 
    input                    ifu_rd_req,
    input  [`ADDR_WIDTH-1:0] ifu_rd_addr,
    output [`DATA_WIDTH-1:0] ifu_rd_data,
@@ -41,6 +42,7 @@ module memory_pdp
    reg [11:0] PDP_memory [0:4095];
 
    // Fill up the memory with known consecutive data
+   /* Initialized to known number for deterministic testing - useful for deterministic testing to verify if the memory is corrupted or not */ 
    integer k;
    initial begin
         for (k=0; k<4096; k=k+1)  begin
@@ -51,12 +53,13 @@ module memory_pdp
 
    int file;
    // Fill the memory with values taken from a data file
+   /* Defined in the package - This is the file containing the machine code for the assembly file */ 
    initial begin
       file = $fopen(`MEM_FILENAME, "r");
       if (file == 0)
          $display("\nError: Could not find file %s\n",`MEM_FILENAME);
       else
-         $readmemh(`MEM_FILENAME,PDP_memory);
+         $readmemh(`MEM_FILENAME,PDP_memory); // <- Memory being read is in HEX 
    end
 
    // Display the contents of memory
@@ -64,7 +67,7 @@ module memory_pdp
    initial begin
         $display("Contents of Mem after reading data file:");
         for (l=0; l<4096; l=l+1)  begin
-           $display("%d:%h",l,PDP_memory[l]);
+           $display("%d:%h",l,PDP_memory[l]); 
         end
    end
 
