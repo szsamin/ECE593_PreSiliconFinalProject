@@ -5,7 +5,7 @@ setlib:
 
 
 compile: 
-	vlog -sv 
+	vlog *.sv 
 
 run: 
-	vsim -c work.test -l SIM.log -do "run -all; quit" 
+	vsim -c work.top -l SIM.log -do "run -all; quit" 

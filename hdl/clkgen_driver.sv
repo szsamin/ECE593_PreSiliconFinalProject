@@ -20,6 +20,8 @@
 //
 //   Copyright:    Tareque Ahmad 
 // =======================================================================
+// Package Include
+`include "pdp8_pkg.sv"
 
 // Import the package
 import pdp8_pkg::*;

@@ -8,71 +8,274 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/u/shadman/ECE593_PreSiliconFinalProject/hdl
+T_opt
+!s110 1496283887
+VLEld[9IWcXlc?G?T_hKIc2
+04 3 4 work top fast 0
+=1-90b11c4fd0c3-592f7aee-f0388-51cf
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4c;61
+R0
 vclkgen_driver
 Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-!s110 1496279048
+Z2 DXx4 work 8 pdp8_pkg 0 22 19HGG4^=MAC>IBJ8QgC?e1
+DXx4 work 21 clkgen_driver_sv_unit 0 22 9UnTbHaJ^;<M4MA1z4Xgz0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
 !i10b 1
-!s100 _E`<m=1DW@Z:9kj5YY_BR0
-IlTd]ME[2FaNDl`fM:_2051
-VDg1SIo80bB@j0V0VzS_@n1
-!s105 top_sv_unit
+!s100 CJCGI[3?8HQdQjk^[<eER0
+Ike@CQIJ?AH2IVb^L<CME]0
+!s105 clkgen_driver_sv_unit
 S1
 R0
-w1496278871
-Z2 8clkgen_driver.sv
-Z3 Fclkgen_driver.sv
-L0 28
-Z4 OL;L;10.4c;61
-r1
-!s85 0
-31
-!s108 1496279048.000000
-!s107 instr_exec.sv|instr_decode.sv|clkgen_driver.sv|top.sv|
-!s90 -sv|top.sv|clkgen_driver.sv|instr_decode.sv|instr_exec.sv|
+Z4 w1496282664
+Z5 8clkgen_driver.sv
+Z6 Fclkgen_driver.sv
+L0 30
+Z7 OL;L;10.4c;61
+Z8 !s108 1496283944.000000
+Z9 !s107 top.sv|pdp8_pkg.sv|memory_pdp.sv|instr_exec.sv|instr_decode.sv|clkgen_driver.sv|
+Z10 !s90 clkgen_driver.sv|instr_decode.sv|instr_exec.sv|memory_pdp.sv|pdp8_pkg.sv|top.sv|
 !i113 0
-Z5 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Xclkgen_driver_sv_unit
 R1
-DXx4 work 8 pdp8_pkg 0 22 4S`90KeoYb2co=n3RZP:h2
-V<MfKOY_DEZzAgj=F4lV7K1
+R2
+V9UnTbHaJ^;<M4MA1z4Xgz0
 r1
 !s85 0
 31
 !i10b 1
-!s100 _?TAL6><>Zg?^fUT@Q=H[0
-I<MfKOY_DEZzAgj=F4lV7K1
+!s100 0g>7Fi1aVd?Az3>Rdmzfm0
+I9UnTbHaJ^;<M4MA1z4Xgz0
 !i103 1
 S1
 R0
-Z6 w1495663408
-R2
-R3
-L0 25
 R4
-!s108 1495664545.000000
-!s107 clkgen_driver.sv|pdp8_pkg.sv|
-!s90 -sv|pdp8_pkg.sv|clkgen_driver.sv|
-!i113 0
 R5
-Xpdp8_pkg
-R1
-!s110 1496279018
-!i10b 1
-!s100 PAMh?=IBNU9_ETK1o?<BK1
-I4S`90KeoYb2co=n3RZP:h2
-V4S`90KeoYb2co=n3RZP:h2
-S1
-R0
 R6
-8pdp8_pkg.sv
-Fpdp8_pkg.sv
-L0 26
-R4
+Z12 Fpdp8_pkg.sv
+L0 27
+R7
+R8
+R9
+R10
+!i113 0
+R11
+vinstr_decode
+R1
+R2
+DXx4 work 20 instr_decode_sv_unit 0 22 G:=5JUUXTJWiYKY8N_?5Q2
+R3
 r1
 !s85 0
 31
-!s108 1496279017.000000
-!s107 instr_exec.sv|instr_decode.sv|clkgen_driver.sv|pdp8_pkg.sv|top.sv|
-!s90 -sv|top.sv|pdp8_pkg.sv|clkgen_driver.sv|instr_decode.sv|instr_exec.sv|
+!i10b 1
+!s100 OQZ_D`DPXF`Clg:6eo@5R3
+IP:^WnDhUb:W27?Yd7Lez=1
+!s105 instr_decode_sv_unit
+S1
+R0
+Z13 w1496282673
+Z14 8instr_decode.sv
+Z15 Finstr_decode.sv
+Z16 L0 25
+R7
+R8
+R9
+R10
 !i113 0
-R5
+R11
+Xinstr_decode_sv_unit
+R1
+R2
+VG:=5JUUXTJWiYKY8N_?5Q2
+r1
+!s85 0
+31
+!i10b 1
+!s100 OZ@iNAlYUAfDYL@Pdinm<0
+IG:=5JUUXTJWiYKY8N_?5Q2
+!i103 1
+S1
+R0
+R13
+R14
+R15
+R12
+Z17 L0 23
+R7
+R8
+R9
+R10
+!i113 0
+R11
+vinstr_exec
+R1
+R2
+DXx4 work 18 instr_exec_sv_unit 0 22 kheE:_h7CCbJkD`i8;e`j0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 LoA@PY]VAji7JNmgLL]<e0
+In_G@8zPmnBMi:EZDRL8nL2
+!s105 instr_exec_sv_unit
+S1
+R0
+Z18 w1496282671
+Z19 8instr_exec.sv
+Z20 Finstr_exec.sv
+R16
+R7
+R8
+R9
+R10
+!i113 0
+R11
+Xinstr_exec_sv_unit
+R1
+R2
+VkheE:_h7CCbJkD`i8;e`j0
+r1
+!s85 0
+31
+!i10b 1
+!s100 M]R]czehWQTRNBHg60HRL3
+IkheE:_h7CCbJkD`i8;e`j0
+!i103 1
+S1
+R0
+R18
+R19
+R20
+R12
+R17
+R7
+R8
+R9
+R10
+!i113 0
+R11
+vmemory_pdp
+R1
+R2
+DXx4 work 18 memory_pdp_sv_unit 0 22 2AhJ2z6<hO`K2gb6?8Sg43
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 =gznfg4mKWJR>X0HAUl=Z3
+IMPF?nKiToA<N?44h@Yz353
+!s105 memory_pdp_sv_unit
+S1
+R0
+Z21 w1496282669
+Z22 8memory_pdp.sv
+Z23 Fmemory_pdp.sv
+R16
+R7
+R8
+R9
+R10
+!i113 0
+R11
+Xmemory_pdp_sv_unit
+R1
+R2
+V2AhJ2z6<hO`K2gb6?8Sg43
+r1
+!s85 0
+31
+!i10b 1
+!s100 =84:;5<F?F1[1[hSAWF[g0
+I2AhJ2z6<hO`K2gb6?8Sg43
+!i103 1
+S1
+R0
+R21
+R22
+R23
+R12
+R17
+R7
+R8
+R9
+R10
+!i113 0
+R11
+Xpdp8_pkg
+R1
+!s110 1496283944
+!i10b 1
+!s100 PAMh?=IBNU9_ETK1o?<BK1
+I19HGG4^=MAC>IBJ8QgC?e1
+V19HGG4^=MAC>IBJ8QgC?e1
+S1
+R0
+w1495663408
+8pdp8_pkg.sv
+R12
+L0 26
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+vtop
+R1
+R2
+DXx4 work 11 top_sv_unit 0 22 9S<aG@;AE`N:19zgRXQm31
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]o47mFb`faNPTch`04M?K3
+IW038JdL`BTd87cSn6W4k52
+!s105 top_sv_unit
+S1
+R0
+Z24 w1496282960
+Z25 8top.sv
+Z26 Ftop.sv
+L0 9
+R7
+R8
+R9
+R10
+!i113 0
+R11
+Xtop_sv_unit
+R1
+R2
+V9S<aG@;AE`N:19zgRXQm31
+r1
+!s85 0
+31
+!i10b 1
+!s100 @PA[in6l:[UE3?JcoQ7j]3
+I9S<aG@;AE`N:19zgRXQm31
+!i103 1
+S1
+R0
+R24
+R25
+R26
+R12
+L0 7
+R7
+R8
+R9
+R10
+!i113 0
+R11

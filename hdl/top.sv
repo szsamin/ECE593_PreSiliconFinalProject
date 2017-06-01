@@ -1,5 +1,11 @@
 /* Top SV */ 
 
+// Package Includee 
+`include "pdp8_pkg.sv"
+
+// Package Import
+import pdp8_pkg::*;
+
 module top; 
 
 // For Clk gen
@@ -9,15 +15,15 @@ logic reset_n;
 
 // From Execution to Instruction 
 logic stall; 
-logic ['ADDR_WIDTH-1:0] PC_value; 
+logic [`ADDR_WIDTH-1:0] PC_value; 
 
 // Fetch declarations 
 logic 			ifu_rd_req; 
-logic ['ADDR_WIDTH-1:0] ifu_rd_addr; 
-logic ['DATA_WIDTH-1:0] ifu_rd_data; 
+logic [`ADDR_WIDTH-1:0] ifu_rd_addr; 
+logic [`DATA_WIDTH-1:0] ifu_rd_data; 
  
 // Base address
-logic ['ADDR_WIDTH-1:0] base_addr; 
+logic [`ADDR_WIDTH-1:0] base_addr; 
 
 // Decode Struct Declaration 
 pdp_mem_opcode_s pdp_mem_opcode; 
@@ -27,14 +33,14 @@ pdp_op7_opcode_s pdp_op7_opcode;
 logic 			exec_wr_req; 
 logic 			exec_rd_req; 
 
-logic ['ADDR_WIDTH-1:0] exec_wr_addr;
-logic ['ADDR_WIDTH-1:0] exec_rd_addr;
+logic [`ADDR_WIDTH-1:0] exec_wr_addr;
+logic [`ADDR_WIDTH-1:0] exec_rd_addr;
 
-logic ['DATA_WIDTH-1:0] exec_wr_data; 
-logic ['DATA_WIDTH-1:0] exec_rd_data; 
+logic [`DATA_WIDTH-1:0] exec_wr_data; 
+logic [`DATA_WIDTH-1:0] exec_rd_data; 
 
 // Clock Generator Instantiation
-clkgen_driver clk(
+clkgen_driver clk_1(
 			.clk(clk),
 			.reset_n(reset_n)
 );
@@ -62,6 +68,7 @@ instr_exec execute(
 			.pdp_mem_opcode(pdp_mem_opcode),
 			.pdp_op7_opcode(pdp_op7_opcode),
 			.stall(stall),
+			.PC_value(PC_value),
 			.exec_wr_req(exec_wr_req),
 			.exec_wr_addr(exec_wr_addr),
 			.exec_rd_req(exec_rd_req),
